@@ -1,0 +1,19 @@
+/* ---------------------------- Main formatting */
+
+.linksPage {
+    max-width: 500px;
+}
+
+main {
+    flex: 3;
+    columns: 1;
+}
+
+
+/* ---------------------------- Links */
+
+h3 {
+    font-family: 'Syne Mono', monospace;
+    font-size: 1.5em;
+    margin-bottom: -0.3em;
+}

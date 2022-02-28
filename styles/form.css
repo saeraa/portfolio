@@ -1,0 +1,83 @@
+/* ---------------------------- Main formatting */
+
+main {
+    flex: 3;
+    columns: 1;
+}
+
+.form {
+    max-width: 500px;
+}
+
+
+/* ---------------------------- LinkedIn image */
+
+.linkedin {
+    border-radius: 10px;
+    width: auto;
+    height: 40px;
+    float: left;
+    box-shadow: 0 0 0 0;
+    border: none;
+    margin-right: 8px;
+}
+
+
+/* ---------------------------- Links on contact page */
+
+.contact {
+    text-align: left;
+    line-height: 1.7em;
+    font-size: 1.5em;
+}
+
+
+/* ---------------------------- Form */
+
+input,
+textarea {
+    box-shadow: 0px 0px 3px rgb(184, 184, 184);
+    padding: 10px;
+    margin: 4px;
+    width: 90%;
+    border: 0;
+    resize: none;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    background-color: rgba(0, 0, 0, 0.308);
+    border: 1px white;
+    outline: none;
+}
+
+input:hover,
+textarea:hover {
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+button[type=submit],
+[type=reset] {
+    border: 0;
+    background-color: white;
+    padding: 2px 15px;
+    margin: 10px;
+    font-family: 'Syne Mono', monospace;
+    box-shadow: 0px 0px 3px rgb(184, 184, 184);
+}
+
+button[type=submit]:hover,
+[type=reset]:hover {
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+
+/* ---------------------------- Make link text smaller on small screens */
+
+@media only screen and (max-width:600px) {
+    .contact {
+        font-size: 1em;
+    }
+}

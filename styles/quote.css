@@ -1,0 +1,45 @@
+/* ---------------------------- Quote container */
+
+.quote--container {
+    margin: 1rem auto 0;
+    border-bottom: 1px solid #666;
+    border-top: 1px solid #666;
+    padding-bottom: 0rem;
+}
+
+.quote {
+    position: relative;
+    letter-spacing: .03em;
+    margin-bottom: .5rem;
+    font-family: 'Syne Mono', monospace;
+}
+
+
+/* ---------------------------- Adding " before and after */
+
+.quote::before {
+    content: "“";
+    position: absolute;
+    left: -.5em;
+}
+
+.quote::after {
+    content: "”";
+    margin-right: -1rem;
+}
+
+
+/* ---------------------------- Quote highlight */
+
+.quote--highlight {
+    color: rgb(219, 97, 97);
+}
+
+
+/* ---------------------------- Quote author */
+
+.quote--author {
+    font-size: .8rem;
+    text-align: right;
+    font-weight: 300;
+}
